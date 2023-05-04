@@ -59,10 +59,10 @@
             </objects>
             <point key="canvasLocation" x="1275.5725190839694" y="-73.239436619718319"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo View Controller-->
         <scene sceneID="fsn-tG-H3G">
             <objects>
-                <viewController id="eXq-He-t9x" sceneMemberID="viewController">
+                <viewController id="eXq-He-t9x" customClass="PhotoViewController" customModule="PhotoTapps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IF3-GB-gcZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,15 +73,29 @@
                                     <constraint firstAttribute="height" constant="200" id="nnI-1s-VzX"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KU6-5A-YFr">
+                                <rect key="frame" x="122" y="749" width="149" height="35"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system" title=" Tap to Share"/>
+                                <connections>
+                                    <action selector="shareAction:" destination="eXq-He-t9x" eventType="touchUpInside" id="7Ql-tY-fho"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DEg-BI-19W"/>
                         <color key="backgroundColor" red="0.13725490196078433" green="0.12156862745098039" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="nwA-d8-qHd" firstAttribute="leading" secondItem="IF3-GB-gcZ" secondAttribute="leading" id="QrV-1C-tF2"/>
+                            <constraint firstItem="KU6-5A-YFr" firstAttribute="centerX" secondItem="IF3-GB-gcZ" secondAttribute="centerX" id="XwB-HI-Bg3"/>
+                            <constraint firstItem="DEg-BI-19W" firstAttribute="bottom" secondItem="KU6-5A-YFr" secondAttribute="bottom" constant="58" id="Ztw-0U-T49"/>
                             <constraint firstAttribute="trailing" secondItem="nwA-d8-qHd" secondAttribute="trailing" id="bHD-qD-88H"/>
                             <constraint firstItem="nwA-d8-qHd" firstAttribute="centerY" secondItem="IF3-GB-gcZ" secondAttribute="centerY" id="lGj-9W-2Tc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="nwA-d8-qHd" id="ENK-HM-5Oe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZMC-LG-EZl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,4 +120,7 @@
             <point key="canvasLocation" x="490.83969465648852" y="-73.239436619718319"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+    </resources>
 </document>

@@ -9,9 +9,14 @@ import UIKit
 
 final class PhotoViewController: UIViewController {
 
+    @IBOutlet var photoImageView: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
 
+    @IBAction func shareAction(_ sender: UIButton) {
+    }
 }
