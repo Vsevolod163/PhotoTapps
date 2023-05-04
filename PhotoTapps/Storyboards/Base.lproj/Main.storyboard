@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y83-ct-Ful">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--PhotoTapps-->
         <scene sceneID="mmP-cY-9hS">
             <objects>
-                <collectionViewController id="1HS-1l-WAk" sceneMemberID="viewController">
+                <collectionViewController id="1HS-1l-WAk" customClass="PhotosCollectionViewController" customModule="PhotoTapps" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="bz4-o6-WmB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,10 +37,29 @@
                             <outlet property="delegate" destination="1HS-1l-WAk" id="JJ6-t2-VUO"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" title="PhotoTapps" id="Mmn-6I-cZb"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tnE-sk-Buc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="492" y="-73"/>
+            <point key="canvasLocation" x="1277" y="-73"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BIN-H5-MYL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y83-ct-Ful" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z7O-Lf-bwm">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1HS-1l-WAk" kind="relationship" relationship="rootViewController" id="v0j-bA-qo4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rme-X6-0Eu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="490.83969465648852" y="-73.239436619718319"/>
         </scene>
     </scenes>
     <resources>
