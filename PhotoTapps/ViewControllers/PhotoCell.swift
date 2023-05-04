@@ -7,6 +7,7 @@
 
 import UIKit
 
-class PhotoCell: UICollectionViewCell {
+final class PhotoCell: UICollectionViewCell {
     
+    @IBOutlet var dogImageView: UIImageView!
 }
