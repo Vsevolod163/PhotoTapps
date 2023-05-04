@@ -56,15 +56,47 @@
 		C64B36EB2A03C4C1009AA572 /* PhotoTapps */ = {
 			isa = PBXGroup;
 			children = (
-				C64B36EC2A03C4C1009AA572 /* AppDelegate.swift */,
-				C64B36EE2A03C4C1009AA572 /* SceneDelegate.swift */,
-				C64B36F02A03C4C1009AA572 /* ViewController.swift */,
-				C64B36F22A03C4C1009AA572 /* Main.storyboard */,
-				C64B36F52A03C4C1009AA572 /* Assets.xcassets */,
-				C64B36F72A03C4C1009AA572 /* LaunchScreen.storyboard */,
-				C64B36FA2A03C4C1009AA572 /* Info.plist */,
+				C64B37032A03C501009AA572 /* ViewControllers */,
+				C64B37022A03C4F6009AA572 /* Storyboards */,
+				C64B37012A03C4EB009AA572 /* Sources */,
+				C64B37002A03C4E3009AA572 /* App */,
 			);
 			path = PhotoTapps;
+			sourceTree = "<group>";
+		};
+		C64B37002A03C4E3009AA572 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C64B36EC2A03C4C1009AA572 /* AppDelegate.swift */,
+				C64B36EE2A03C4C1009AA572 /* SceneDelegate.swift */,
+				C64B36FA2A03C4C1009AA572 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C64B37012A03C4EB009AA572 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C64B36F52A03C4C1009AA572 /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C64B37022A03C4F6009AA572 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C64B36F22A03C4C1009AA572 /* Main.storyboard */,
+				C64B36F72A03C4C1009AA572 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C64B37032A03C501009AA572 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C64B36F02A03C4C1009AA572 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,8 +325,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +334,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lashin.PhotoTapps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +356,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +365,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lashin.PhotoTapps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
