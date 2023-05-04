@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		C64B36ED2A03C4C1009AA572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64B36EC2A03C4C1009AA572 /* AppDelegate.swift */; };
 		C64B36EF2A03C4C1009AA572 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64B36EE2A03C4C1009AA572 /* SceneDelegate.swift */; };
-		C64B36F12A03C4C1009AA572 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64B36F02A03C4C1009AA572 /* ViewController.swift */; };
 		C64B36F42A03C4C1009AA572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64B36F22A03C4C1009AA572 /* Main.storyboard */; };
 		C64B36F62A03C4C1009AA572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C64B36F52A03C4C1009AA572 /* Assets.xcassets */; };
 		C64B36F92A03C4C1009AA572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64B36F72A03C4C1009AA572 /* LaunchScreen.storyboard */; };
+		C64B37052A03C60E009AA572 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64B37042A03C60E009AA572 /* PhotosCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C64B36E92A03C4C1009AA572 /* PhotoTapps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoTapps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64B36EC2A03C4C1009AA572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C64B36EE2A03C4C1009AA572 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C64B36F02A03C4C1009AA572 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C64B36F32A03C4C1009AA572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C64B36F52A03C4C1009AA572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C64B36F82A03C4C1009AA572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C64B36FA2A03C4C1009AA572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C64B37042A03C60E009AA572 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 		C64B37032A03C501009AA572 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C64B36F02A03C4C1009AA572 /* ViewController.swift */,
+				C64B37042A03C60E009AA572 /* PhotosCollectionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -170,9 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C64B36F12A03C4C1009AA572 /* ViewController.swift in Sources */,
 				C64B36ED2A03C4C1009AA572 /* AppDelegate.swift in Sources */,
 				C64B36EF2A03C4C1009AA572 /* SceneDelegate.swift in Sources */,
+				C64B37052A03C60E009AA572 /* PhotosCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +321,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W83LB3ZRMV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PhotoTapps/Info.plist;
+				INFOPLIST_FILE = PhotoTapps/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -352,7 +352,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W83LB3ZRMV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PhotoTapps/Info.plist;
+				INFOPLIST_FILE = PhotoTapps/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
