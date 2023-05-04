@@ -9,7 +9,7 @@ import UIKit
 
 final class PhotosCollectionViewController: UICollectionViewController {
     
-    let photos = [
+    private let photos = [
         "dog1",
         "dog2",
         "dog3",
@@ -27,8 +27,8 @@ final class PhotosCollectionViewController: UICollectionViewController {
         "dog15"
     ]
     
-    let itemsPerRow: CGFloat = 2
-    let sectionInserts = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+    private let itemsPerRow: CGFloat = 2
+    private let sectionInserts = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
     
     override func viewDidLoad() {
         super.viewDidLoad()

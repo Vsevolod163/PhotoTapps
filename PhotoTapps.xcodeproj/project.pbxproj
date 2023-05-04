@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C620672A2A03E8D300C2B87D /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62067292A03E8D300C2B87D /* PhotoViewController.swift */; };
 		C64B36ED2A03C4C1009AA572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64B36EC2A03C4C1009AA572 /* AppDelegate.swift */; };
 		C64B36EF2A03C4C1009AA572 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64B36EE2A03C4C1009AA572 /* SceneDelegate.swift */; };
 		C64B36F42A03C4C1009AA572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64B36F22A03C4C1009AA572 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C62067292A03E8D300C2B87D /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		C64B36E92A03C4C1009AA572 /* PhotoTapps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoTapps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64B36EC2A03C4C1009AA572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C64B36EE2A03C4C1009AA572 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				C64B37042A03C60E009AA572 /* PhotosCollectionViewController.swift */,
 				C64B37062A03C917009AA572 /* PhotoCell.swift */,
+				C62067292A03E8D300C2B87D /* PhotoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				C64B36ED2A03C4C1009AA572 /* AppDelegate.swift in Sources */,
 				C64B36EF2A03C4C1009AA572 /* SceneDelegate.swift in Sources */,
 				C64B37052A03C60E009AA572 /* PhotosCollectionViewController.swift in Sources */,
+				C620672A2A03E8D300C2B87D /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
