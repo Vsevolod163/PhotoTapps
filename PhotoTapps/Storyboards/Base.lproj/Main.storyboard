@@ -44,7 +44,7 @@
                                 <size key="customSize" width="100" height="100"/>
                                 <connections>
                                     <outlet property="dogImageView" destination="90H-Iz-ytD" id="cJl-wu-BZU"/>
-                                    <segue destination="eXq-He-t9x" kind="presentation" id="fqB-St-YPN"/>
+                                    <segue destination="eXq-He-t9x" kind="presentation" identifier="pickPhotoSegue" id="fqB-St-YPN"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -67,7 +67,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nwA-d8-qHd">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nwA-d8-qHd">
                                 <rect key="frame" x="0.0" y="321" width="393" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="nnI-1s-VzX"/>
